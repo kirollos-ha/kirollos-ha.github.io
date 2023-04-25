@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+
+# per buildare tutti i file .scss in una singola stylesheet da dare all'html
+
+proj_home_dir="$HOME/git/kirollos-ha.github.io/" 
+scss_dir="$proj_home_dir/scss"
+css_dir="$proj_home_dir"
+main_css="$css_dir/style.css"
+
+# genera file principale
+ls "$scss_dir" |\
+  awk -F. 'NF==2 && $1!="main" { printf "@use\"%s\";\n", $1 }'\
+  > "$scss_dir/main.scss"
+
+echo "generated (probably)"
+
+# compila file principale
+sass "$scss_dir/main.scss" "$main_css" && echo "compiled successfully"
