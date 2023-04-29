@@ -1,0 +1,92 @@
+/* questi colori sono proof of concept
+ * poi fotti tutti i colori da tokyonight */
+$font-size-normal: 18pt;
+$font-size-midbig: 24pt;
+$font-size-biggish: 32pt;
+$font-size-title: 72pt;
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    font-size: $font-size-normal;
+}
+
+h1 {
+    color: white;
+    font-size: $font-size-title;
+    font-weight: heavier;
+}
+
+.linkbar {
+    display: flex;
+    background-color: darkmagenta;
+    a {
+	font-size: $font-size-biggish;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 5pt;
+    }
+    a:hover {
+	background-color: magenta;
+    }
+    .menuicon {
+	margin-left: auto;
+	background-color: magenta;
+    }
+}
+.contacts-button, .about-button {
+    font-size: $font-size-biggish;
+    border-radius: 3pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin: 10pt;
+    text-decoration: none;
+}
+
+.contacts-button {
+    color: white;
+    background-color: darkmagenta;
+}
+.contacts-button:hover {
+    color: darkmagenta;
+    background-color: white;
+}
+.about-button {
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 2pt;
+}
+
+.about-button:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.footer-sep {
+    margin-top: 50%;
+    margin-bottom: 10%;
+    color: white;
+    text-decoration-thickness: 20px;
+}
+
+.footer {
+    color: white;
+    a {
+	font-size: large;
+	color: white;
+    }
+    a:hover {
+	color: black;
+	background-color: white;
+    }
+}
+
+a {
+    color: magenta;
+    text-decoration: none;
+    font-weight: bold;
+}

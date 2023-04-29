@@ -1,0 +1,94 @@
+/* questi colori sono proof of concept
+ * poi fotti tutti i colori da tokyonight */
+body {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+  font-size: 18pt;
+}
+
+h1 {
+  color: white;
+  font-size: 72pt;
+  font-weight: heavier;
+}
+
+.linkbar {
+  display: flex;
+  background-color: darkmagenta;
+}
+.linkbar a {
+  font-size: 32pt;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 5pt;
+}
+.linkbar a:hover {
+  background-color: magenta;
+}
+.linkbar .menuicon {
+  margin-left: auto;
+  background-color: magenta;
+}
+
+.contacts-button, .about-button {
+  font-size: 32pt;
+  border-radius: 3pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  margin: 10pt;
+  text-decoration: none;
+}
+
+.contacts-button {
+  color: white;
+  background-color: darkmagenta;
+}
+
+.contacts-button:hover {
+  color: darkmagenta;
+  background-color: white;
+}
+
+.about-button {
+  color: white;
+  border-color: white;
+  border-style: solid;
+  border-width: 2pt;
+}
+
+.about-button:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
+
+.footer-sep {
+  margin-top: 50%;
+  margin-bottom: 10%;
+  color: white;
+  text-decoration-thickness: 20px;
+}
+
+.footer {
+  color: white;
+}
+.footer a {
+  font-size: large;
+  color: white;
+}
+.footer a:hover {
+  color: black;
+  background-color: white;
+}
+
+a {
+  color: magenta;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* da rivederissimo */
+
+/*# sourceMappingURL=style.css.map */
