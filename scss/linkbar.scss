@@ -1,0 +1,26 @@
+@use "base";
+
+.linkbar {
+    display: flex;
+    background-color: darkmagenta;
+    a {
+	font-size: base.$font-size-biggish;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 5pt;
+    }
+    a:hover {
+	background-color: magenta;
+    }
+    .menuicon {
+	margin-left: auto;
+	background-color: magenta;
+    }
+}
+
+@media screen and (max-width:base.$middle-width) {
+    .linkbar {
+	flex-direction: column;
+    }
+}

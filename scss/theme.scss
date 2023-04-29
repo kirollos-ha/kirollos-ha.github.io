@@ -1,0 +1,30 @@
+@use "base";
+
+body {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    font-size: base.$font-size-normal;
+}
+
+h1 {
+    color: white;
+    font-size: base.$font-size-title;
+    font-weight: heavier;
+}
+
+a {
+    color: magenta;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: white;
+    background-color: magenta ;
+}
+
+@media screen and (max-width:base.$narrow) {
+    h1 {
+	font-size: 48pt;
+    }
+}

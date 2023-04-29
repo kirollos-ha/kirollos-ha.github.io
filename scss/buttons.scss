@@ -1,0 +1,36 @@
+@use "base";
+
+.bottoni {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts-button, .about-button {
+    font-size: base.$font-size-biggish;
+    border-radius: 3pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin: 15pt;
+    text-decoration: none;
+}
+
+.contacts-button {
+    color: white;
+    background-color: darkmagenta;
+}
+.contacts-button:hover {
+    color: darkmagenta;
+    background-color: white;
+}
+.about-button {
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 2pt;
+}
+
+.about-button:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
