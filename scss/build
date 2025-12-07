@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # per buildare tutti i file .scss in una singola stylesheet da dare all'html
 
